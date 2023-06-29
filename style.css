@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;   
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container > .left_side {
+    position: relative;
+    background-color: rgb(240, 228, 123);
+    padding: 35px;
+}
+
+.profile_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid cadetblue;
+}
+
+.profile_text > .my_img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.profile_text > .my_img > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_text  h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile_text  h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: cadetblue;
+}
+
+.contactInfo ul li span {
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+
+}
+
+.contactInfo.education h5 {
+    color: cadetblue;
+    font-weight: 500;
+}
+
+.contactInfo.education h4 {
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+    font-weight: 700;
+}
+
+.contactInfo.languages .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: black;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: cadetblue;
+    
+}
+
+
+.container > .right_side {
+    position: relative;
+    background-color: #fff;
+    padding: 35px;
+}
+
+.about {
+    margin-bottom: 35px;
+
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+.about h4,
+.about h3 {
+    color: cadetblue;
+    padding: 10px 0;
+}
+
+.title2 {
+    color: cadetblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;   
+}
+
+p {
+    color: rgb(86, 121, 122);
+    line-height: 25px;
+}
+
+.text  p {
+    padding: 10px 0;
+}
+
+.text p span {
+    font-weight: 600;
+}
